@@ -25,7 +25,8 @@
 }
 .calculator{
     width: 17em;
-    height: 22em;
+    height: 30em;
+    padding-top: 15px;
     background-color: rgba(26, 8, 41, 0.559);
     font-weight: bolder;
     border-width: 5px;
@@ -36,20 +37,20 @@
 }
 .calculator__screen{
     width: 86%;
-    height: 15%;
+    height: 20%;
     background-color: rgb(24, 55, 13);
     color: chartreuse;
     border-top-color: rgb(33, 73, 18);
     border-left-color: rgb(18, 39, 10);
     border-width: 3px;
     border-radius: 3px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 .calculator__block-btn{
-    padding: 0.2em;
+    padding: 0.5em 0.2em;
     display: grid;
-    grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+    grid-template: repeat(5, 1fr)/repeat(4, 1fr);
     gap: 0.5em;
     background-color: rgba(15, 5, 24, 0.559);
     border-radius: 4px;
@@ -65,6 +66,7 @@
     border-left-color: rgb(82, 82, 82);
     border-width: 3px;
     border-radius: 6px;
+    transition: all 0.1s linear;
 }
 .block-btn__btn:active{
     font-size: 1em;
@@ -75,11 +77,41 @@
     border-left-color: rgb(29, 29, 29);
 
 }
+.block-btn__btn--sign{
+    background-color: rgba(255, 0, 255, 0.466);
+    font-size: 1.5em;
+}
+.block-btn__btn--sign:active{
+    background-color: rgba(255, 0, 255, 0.253);
+    font-size: 1.3em;
+}
+.block-btn__btn--duo{
+    grid-column: span 2;
+}
 .block-btn__btn--reset:active{
    border-left-width: 3.8px;
    border-right-width: 4.5px;
     
 }
+.block-btn__btn--switch-on{
+    background-color: forestgreen;
+}
+.block-btn__btn--switch-on:active{
+    background-color: darkolivegreen;
+    font-size: 1.1em;
+}
+.block-btn__btn--switch-off{
+    background-color: crimson;
+    
+}
+.block-btn__btn--switch-off:active{
+    border-left-width: 3.5px;
+    border-right-width: 5px;
+    background-color: rgba(180, 22, 54, 0.699);
+     
+ }
+
+/* ----------------------------------------------- */
 .modal{
     background-color: rgb(95, 93, 93);
     width: 100%;
